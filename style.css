@@ -108,7 +108,6 @@ body {
     cursor: pointer;
 }
 
-/* Estilos para el cuadro de diálogo modal */
 .book-dialog {
     background-color: #1a273e;
     color: #f1f5f9;
@@ -118,9 +117,11 @@ body {
     width: 350px;
     max-width: 90%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    margin: auto;
 }
 
-/* Fondo oscuro translúcido cuando se abre el diálogo */
 .book-dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.7);
 }
