@@ -1,1 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: #111c2e;
+    color: #f1f5f9;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    padding: 40px 5%;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.grid-header {
+    
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: large;
+    font-weight: bolder;
+    background-color: #263650;
+    border: 1px solid #263650;
+    border-radius: 9px;
+    padding: 15px 10px;
+    align-items: center;
+}
+
+.grid-header div {
+    background-color: #263650;    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.header svg {
+    width: 45px;
+}
+
+.grid-row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: large;
+    border-bottom: 1px solid #3e506b;
+    padding: 15px 10px;
+    align-items: center;
+    background-color: transparent; 
+    transition: background-color 0.2s ease;
+}
+
+.grid-row > div {
+    background-color: transparent;
+}
+
+.grid-row:hover {
+    background-color: #3e506b;
+}
+
+.btnAdd {
+    background-color: rgb(57, 67, 205);
+    outline: none;
+    border-radius: 12px;
+    font-size: medium;
+    font-weight: bold;
+    border: 1px solid #263650;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #f1f5f9;
+}
+
+.btnAdd:hover {
+    background-color: rgb(89, 99, 241);
+}
+
+.btnRemove {
+    background-color: rgb(212, 87, 74);
+    outline: none;
+    border-radius: 12px;
+    font-size: smaller;
+    font-weight: bold;
+    border: 1px solid #c06666;
+    width: 100px;
+    padding: 6px;
+    cursor: pointer;
+    color: #f1f5f9;
+}
+
+.btnRemove:hover {
+    background-color: rgb(235, 124, 112);
+}
+
+.btnRead {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
