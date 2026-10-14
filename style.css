@@ -107,3 +107,101 @@ body {
     height: 20px;
     cursor: pointer;
 }
+
+/* Estilos para el cuadro de diálogo modal */
+.book-dialog {
+    background-color: #1a273e;
+    color: #f1f5f9;
+    border: 1px solid #3e506b;
+    border-radius: 12px;
+    padding: 25px;
+    width: 350px;
+    max-width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Fondo oscuro translúcido cuando se abre el diálogo */
+.book-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.book-dialog h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #f1f5f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #94a3b8;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    background-color: #111c2e;
+    border: 1px solid #3e506b;
+    border-radius: 8px;
+    padding: 10px;
+    color: #f1f5f9;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: rgb(89, 99, 241);
+}
+
+.form-group-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group-checkbox label {
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btnSubmit {
+    background-color: rgb(57, 67, 205);
+    color: #f1f5f9;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnSubmit:hover {
+    background-color: rgb(89, 99, 241);
+}
+
+.btnCancel {
+    background-color: transparent;
+    color: #94a3b8;
+    border: 1px solid #3e506b;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnCancel:hover {
+    background-color: #3e506b;
+    color: #f1f5f9;
+}
